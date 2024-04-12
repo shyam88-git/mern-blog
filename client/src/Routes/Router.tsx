@@ -5,31 +5,62 @@ import Dashboard from "../pages/Dashboard/Dashboard";
 import Projects from "../pages/Project/Projects";
 import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
+import Header from "../components/header/Header";
 
 const router = createBrowserRouter([
   {
-    path: "/home",
-    element: <Home />,
+    path: "/",
+    element: (
+      <>
+        <Header />
+        <Home />
+      </>
+    ),
   },
   {
     path: "/about",
-    element: <About />,
+    element: (
+      <>
+        <Header />
+        <About />
+      </>
+    ),
   },
   {
     path: "/dashboard",
-    element: <Dashboard />,
+    element: (
+      <>
+        <Header />
+        <Dashboard />
+      </>
+    ),
   },
   {
     path: "/projects",
-    element: <Projects />,
+    element: (
+      <>
+        <Header />
+        <Projects />
+      </>
+    ),
   },
   {
     path: "/login",
-    element: <Login />,
+    element: (
+      <>
+        <Header />
+        <Login />
+      </>
+    ),
   },
   {
     path: "/register",
-    element: <Register />,
+    element: (
+      <>
+        <Header />
+        <Register />
+      </>
+    ),
   },
 ]);
 
